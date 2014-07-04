@@ -1,0 +1,1 @@
+使用TextView/EditText应该注意的地方 http://gundumw100.iteye.com/blog/974557

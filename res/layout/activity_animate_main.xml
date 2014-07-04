@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" >
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/fadeInButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="fadeIn" />
+
+            <Button
+                android:id="@+id/fadeOutButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="fadeOut" />
+
+            <Button
+                android:id="@+id/slideInButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="slideIn" />
+
+            <Button
+                android:id="@+id/slideOutButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="slideOut" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/scaleInButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="scaleIn" />
+
+            <Button
+                android:id="@+id/scaleOutButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="scaleOut" />
+
+            <Button
+                android:id="@+id/rotateInButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="rotateIn" />
+
+            <Button
+                android:id="@+id/rotateOutButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="rotateOut" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/scaleRotateInButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="scaleRotateIn" />
+
+            <Button
+                android:id="@+id/scaleRotateOutButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="scaleRotateOut" />
+
+            <Button
+                android:id="@+id/slideFadeInButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="slideFadeIn" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/slideFadeOutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="slideFadeOut" />
+    </LinearLayout>
+
+</RelativeLayout>
