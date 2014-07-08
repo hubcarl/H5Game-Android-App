@@ -8,7 +8,7 @@ import android.view.View.OnClickListener;
 import android.webkit.WebView;
 import android.widget.Button;
 
-import com.blue.sky.androidwebapp.R;
+import com.blue.sky.component.R;
 
 public class AnimationDemosActivity extends Activity implements OnClickListener
 {

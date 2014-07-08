@@ -1,20 +1,16 @@
 package com.blue.sky.web.api.webview;
 
-import java.lang.reflect.Field;
-import java.lang.reflect.Method;
-
 import android.annotation.TargetApi;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.os.Build;
 import android.util.AttributeSet;
 import android.util.Log;
-import android.webkit.ConsoleMessage;
-import android.webkit.WebChromeClient;
-import android.webkit.WebSettings;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
+import android.webkit.*;
 import android.webkit.WebSettings.PluginState;
+
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
 
 public class CrossDomainWebView extends WebView {
 
@@ -37,9 +33,9 @@ public class CrossDomainWebView extends WebView {
 	public void openCrossDomain()
 	{
 		
-		if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-		    WebView.setWebContentsDebuggingEnabled(true);
-		}
+//		if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+//		    WebView.setWebContentsDebuggingEnabled(true);
+//		}
 		
 		if (Build.VERSION.SDK_INT >= 16) {
 			Class<?> clazz = this.getSettings().getClass();

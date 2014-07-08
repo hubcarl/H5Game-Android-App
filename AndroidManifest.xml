@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.blue.sky.androidwebapp"
+    package="com.blue.sky.component"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -31,6 +31,8 @@
         <activity android:name="com.blue.sky.animate.SimpleGesture" >
         </activity>
         <activity android:name="com.blue.sky.animate.MyGuideViewActivity" >
+        </activity>
+        <activity android:name="com.blue.sky.tab.fragment.MainActivity" >
         </activity>
         <activity
             android:name="com.blue.sky.message.ApkManagerActivity"

@@ -15,7 +15,7 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
 import android.view.KeyEvent;
 
-import com.blue.sky.androidwebapp.R;
+import com.blue.sky.component.R;
 import com.blue.sky.control.tab.webview.WebViewFragment;
 import com.blue.sky.control.tab.webview.WebViewPagerAdapter;
 
@@ -34,7 +34,7 @@ public class WebViewTabActivity extends FragmentActivity implements ActionBar.Ta
 	    final ActionBar actionBar = getActionBar();
 	    actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
 	    actionBar.setDisplayOptions(0,ActionBar.DISPLAY_SHOW_HOME|ActionBar.DISPLAY_SHOW_TITLE );
-        //·½·¨2
+        //ï¿½ï¿½ï¿½ï¿½2
         //bar.setDisplayShowHomeEnabled(false);  
         //bar.setDisplayShowTitleEnabled(false);
 	    
@@ -47,7 +47,7 @@ public class WebViewTabActivity extends FragmentActivity implements ActionBar.Ta
 	      new WebViewFragment("file:///android_asset/h5/list.html", app),
 	    };
 	    
-	    CharSequence[] titles = {"°Ù¶È","Bing","Code","H5"};
+	    CharSequence[] titles = {"ï¿½Ù¶ï¿½","Bing","Code","H5"};
 	    webViewPagerAdapter = new WebViewPagerAdapter(getSupportFragmentManager(),fragments,titles);
 
 	    viewPager = (ViewPager) findViewById(R.id.pager);
@@ -88,16 +88,16 @@ public class WebViewTabActivity extends FragmentActivity implements ActionBar.Ta
 		{
 			if (keyCode == KeyEvent.KEYCODE_BACK )
 			{
-				// ´´½¨ÍË³ö¶Ô»°¿ò
+				// ï¿½ï¿½ï¿½ï¿½ï¿½Ë³ï¿½ï¿½Ô»ï¿½ï¿½ï¿½
 				AlertDialog isExit = new AlertDialog.Builder(this).create();
-				// ÉèÖÃ¶Ô»°¿ò±êÌâ
-				isExit.setTitle("ÏµÍ³ÌáÊ¾");
-				// ÉèÖÃ¶Ô»°¿òÏûÏ¢
-				isExit.setMessage("È·¶¨ÒªÍË³öÂð");
-				// Ìí¼ÓÑ¡Ôñ°´Å¥²¢×¢²á¼àÌý
-				isExit.setButton("È·¶¨", listener);
-				isExit.setButton2("È¡Ïû", listener);
-				// ÏÔÊ¾¶Ô»°¿ò
+				// ï¿½ï¿½ï¿½Ã¶Ô»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+				isExit.setTitle("ÏµÍ³ï¿½ï¿½Ê¾");
+				// ï¿½ï¿½ï¿½Ã¶Ô»ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
+				isExit.setMessage("È·ï¿½ï¿½Òªï¿½Ë³ï¿½ï¿½ï¿½");
+				// ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½Å¥ï¿½ï¿½×¢ï¿½ï¿½ï¿½ï¿½ï¿½
+				isExit.setButton("È·ï¿½ï¿½", listener);
+				isExit.setButton2("È¡ï¿½ï¿½", listener);
+				// ï¿½ï¿½Ê¾ï¿½Ô»ï¿½ï¿½ï¿½
 				isExit.show();
 
 			}
@@ -105,17 +105,17 @@ public class WebViewTabActivity extends FragmentActivity implements ActionBar.Ta
 			return false;
 			
 		}
-		/**¼àÌý¶Ô»°¿òÀïÃæµÄbuttonµã»÷ÊÂ¼þ*/
+		/**ï¿½ï¿½ï¿½ï¿½Ô»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½buttonï¿½ï¿½ï¿½ï¿½Â¼ï¿½*/
 		DialogInterface.OnClickListener listener = new DialogInterface.OnClickListener()
 		{
 			public void onClick(DialogInterface dialog, int which)
 			{
 				switch (which)
 				{
-				case AlertDialog.BUTTON_POSITIVE:// "È·ÈÏ"°´Å¥ÍË³ö³ÌÐò
+				case AlertDialog.BUTTON_POSITIVE:// "È·ï¿½ï¿½"ï¿½ï¿½Å¥ï¿½Ë³ï¿½ï¿½ï¿½ï¿½ï¿½
 					finish();
 					break;
-				case AlertDialog.BUTTON_NEGATIVE:// "È¡Ïû"µÚ¶þ¸ö°´Å¥È¡Ïû¶Ô»°¿ò
+				case AlertDialog.BUTTON_NEGATIVE:// "È¡ï¿½ï¿½"ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½Å¥È¡ï¿½ï¿½Ô»ï¿½ï¿½ï¿½
 					break;
 				default:
 					break;
@@ -135,9 +135,9 @@ public class WebViewTabActivity extends FragmentActivity implements ActionBar.Ta
 	                String reason = intent.getStringExtra(SYSTEM_REASON);
 	                if (reason != null) {
 	                    if (reason.equals(SYSTEM_HOME_KEY)) {
-	                        // home key´¦Àíµã
+	                        // home keyï¿½ï¿½ï¿½ï¿½ï¿½
 	                    } else if (reason.equals(SYSTEM_RECENT_APPS)) {
-	                        // long home key´¦Àíµã
+	                        // long home keyï¿½ï¿½ï¿½ï¿½ï¿½
 	                    }
 	                }
 	            }

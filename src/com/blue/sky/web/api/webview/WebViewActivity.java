@@ -18,13 +18,13 @@ import android.webkit.WebSettings.PluginState;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-import com.blue.sky.androidwebapp.R;
+import com.blue.sky.component.R;
 import com.blue.sky.web.api.JSInterface;
 import com.blue.sky.web.api.WebAppInterface;
 
 public class WebViewActivity extends Activity {
 
-	private boolean hasAdobePlayer = false;// ADOBE FLASH PLAYER²å¼þ°²×°×´Ì¬
+	private boolean hasAdobePlayer = false;// ADOBE FLASH PLAYERï¿½ï¿½ï¿½ï¿½ï¿½×°×´Ì¬
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -61,8 +61,8 @@ public class WebViewActivity extends Activity {
 			public void onPageFinished(WebView view, String url) {
 				Log.d("WebView", "onPageFinished ");
 				view.loadUrl("javascript:var body=document.getElementsByTagName('html')[0];" +
-						"if(body.innerHTML.indexOf('ÕÒ²»µ½ÍøÒ³')>-1||body.innerHTML.indexOf('ÍøÖ·²»ÕýÈ·')>-1)" +
-						"{console.log('>>>>ÕÒ²»µ½ÍøÒ³ÉèÖÃ²»¿É¼û');console.log(body.innerHTML);body.style.display='none';}");
+						"if(body.innerHTML.indexOf('ï¿½Ò²ï¿½ï¿½ï¿½ï¿½ï¿½Ò³')>-1||body.innerHTML.indexOf('ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½È·')>-1)" +
+						"{console.log('>>>>ï¿½Ò²ï¿½ï¿½ï¿½ï¿½ï¿½Ò³ï¿½ï¿½ï¿½Ã²ï¿½ï¿½É¼ï¿½');console.log(body.innerHTML);body.style.display='none';}");
 				super.onPageFinished(view, url);
 			}
 
@@ -108,15 +108,15 @@ public class WebViewActivity extends Activity {
 		
 		webView.loadUrl("http://a.9game.cn/whcl/203642.html");
 		
-		// ´ò¿ª±¾°üÄÚassetÄ¿Â¼ÏÂµÄindex.htmlÎÄ¼þ
+		// ï¿½ò¿ª±ï¿½ï¿½ï¿½ï¿½ï¿½assetÄ¿Â¼ï¿½Âµï¿½index.htmlï¿½Ä¼ï¿½
 		///webView.loadUrl("file:///android_asset/web.html");
 		
 		//webView.loadUrl("file:///android_asset/web.html/#/game/detail?gameId=537550");
 
-		// ´ò¿ª±¾µØsd¿¨ÄÚµÄindex.htmlÎÄ¼þ
+		// ï¿½ò¿ª±ï¿½ï¿½ï¿½sdï¿½ï¿½ï¿½Úµï¿½index.htmlï¿½Ä¼ï¿½
 		// wView.loadUrl("content://com.android.htmlfileprovider/sdcard/index.html");
 
-		// ´ò¿ªÖ¸¶¨URLµÄhtmlÎÄ¼þ
+		// ï¿½ï¿½Ö¸ï¿½ï¿½URLï¿½ï¿½htmlï¿½Ä¼ï¿½
 		// wView.loadUrl("http://wap.baidu.com");
 
 	}
@@ -136,12 +136,12 @@ public class WebViewActivity extends Activity {
 	
 	
 	/**
-	 * ÅÐ¶ÏÊÇ·ñ°²×°ADOBE FLASH PLAYER²å¼þ
+	 * ï¿½Ð¶ï¿½ï¿½Ç·ï¿½×°ADOBE FLASH PLAYERï¿½ï¿½ï¿½
 	 * 
 	 * @return
 	 */
 	public boolean OnCheck() {
-		// ÅÐ¶ÏÊÇ·ñ°²×°ADOBE FLASH PLAYER²å¼þ
+		// ï¿½Ð¶ï¿½ï¿½Ç·ï¿½×°ADOBE FLASH PLAYERï¿½ï¿½ï¿½
 		PackageManager pm = getPackageManager();
 		List<PackageInfo> lsPackageInfo = pm.getInstalledPackages(0);
 
@@ -151,7 +151,7 @@ public class WebViewActivity extends Activity {
 				break;
 			}
 		}
-		// Èç¹û²å¼þ°²×°Ò»ÇÐÕý³£
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×°Ò»ï¿½ï¿½ï¿½ï¿½
 		if (hasAdobePlayer == true) {
 			return true;
 		} else {

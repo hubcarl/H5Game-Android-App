@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 主界面的空间列表item文字颜色，可随触摸事件变化 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 选中时的图片背景 -->
+    <item android:state_selected="true" android:color="@color/white" />
+    <!-- 单击时的背景图片 -->
+    <item android:state_pressed="true" android:color="@color/white" />
+
+</selector>

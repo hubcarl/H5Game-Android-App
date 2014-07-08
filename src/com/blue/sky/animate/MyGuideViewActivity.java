@@ -18,17 +18,17 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.blue.sky.androidwebapp.R;
+import com.blue.sky.component.R;
 
 /**
- * AndroidÊµÏÖ×óÓÒ»¬¶¯Ö¸ÒýÐ§¹û
- * @Description: AndroidÊµÏÖ×óÓÒ»¬¶¯Ö¸ÒýÐ§¹û
+ * AndroidÊµï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½Ð§ï¿½ï¿½
+ * @Description: AndroidÊµï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½Ð§ï¿½ï¿½
 
  * @File: MyGuideViewActivity.java
 
  * @Author Hanyonglu
 
- * @Date 2012-4-6 ÏÂÎç11:15:18
+ * @Date 2012-4-6 ï¿½ï¿½ï¿½ï¿½11:15:18
 
  * @Version V1.0
  */
@@ -37,9 +37,9 @@ public class MyGuideViewActivity extends Activity {
 	 private ArrayList<View> pageViews;  
 	 private ImageView imageView;  
 	 private ImageView[] imageViews; 
-	 // °ü¹ü»¬¶¯Í¼Æ¬LinearLayout
+	 // ï¿½ï¿½ï¿½Í¼Æ¬LinearLayout
 	 private ViewGroup main;
-	 // °ü¹üÐ¡Ô²µãµÄLinearLayout
+	 // ï¿½ï¿½ï¿½Ð¡Ô²ï¿½ï¿½ï¿½LinearLayout
 	 private ViewGroup group;
 	 private TextView tv1;
 	 private TextView tv2;
@@ -52,7 +52,7 @@ public class MyGuideViewActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // ÉèÖÃÎÞ±êÌâ´°¿Ú
+        // ï¿½ï¿½ï¿½ï¿½ï¿½Þ±ï¿½ï¿½â´°ï¿½ï¿½
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         
         LayoutInflater inflater = getLayoutInflater();
@@ -84,7 +84,7 @@ public class MyGuideViewActivity extends Activity {
             imageViews[i] = imageView;  
             
             if (i == 0) {  
-                //Ä¬ÈÏÑ¡ÖÐµÚÒ»ÕÅÍ¼Æ¬
+                //Ä¬ï¿½ï¿½Ñ¡ï¿½Ðµï¿½Ò»ï¿½ï¿½Í¼Æ¬
                 imageViews[i].setBackgroundResource(R.drawable.page_indicator_focused);  
             } else {  
                 imageViews[i].setBackgroundResource(R.drawable.page_indicator);  
@@ -95,7 +95,7 @@ public class MyGuideViewActivity extends Activity {
         
         setContentView(main);
         
-        // ¼àÌý×ÓÒ³ÃæÊÂ¼þ
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò³ï¿½ï¿½ï¿½Â¼ï¿½
         tv1 = (TextView)v1.findViewById(R.id.textView1);
         tv1.setOnClickListener(new TextViewOnClickListener());
         tv2 = (TextView)v2.findViewById(R.id.textView2);
@@ -113,7 +113,7 @@ public class MyGuideViewActivity extends Activity {
         viewPager.setOnPageChangeListener(new GuidePageChangeListener());  
     }
     
-    // ÊÂ¼þ¼àÌýÆ÷
+    // ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     private class TextViewOnClickListener implements OnClickListener{
     	@Override
     	public void onClick(View v) {
@@ -122,7 +122,7 @@ public class MyGuideViewActivity extends Activity {
     	}
     }
     
-    // Ö¸ÒýÒ³ÃæÊý¾ÝÊÊÅäÆ÷
+    // Ö¸ï¿½ï¿½Ò³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     private class GuidePageAdapter extends PagerAdapter {  
   	  
         @Override  
@@ -179,7 +179,7 @@ public class MyGuideViewActivity extends Activity {
         }  
     } 
     
-    // Ö¸ÒýÒ³Ãæ¸ü¸ÄÊÂ¼þ¼àÌýÆ÷
+    // Ö¸ï¿½ï¿½Ò³ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     private class GuidePageChangeListener implements OnPageChangeListener {  
     	  
         @Override  

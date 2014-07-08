@@ -14,7 +14,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.blue.sky.androidwebapp.R;
+import com.blue.sky.component.R;
 import com.blue.sky.common.utils.NetWorkHelper;
 import com.blue.sky.control.CirclePageIndicator;
 import com.blue.sky.control.CirclePageIndicator.LastPageSlidingListener;

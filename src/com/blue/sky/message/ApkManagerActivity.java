@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.content.IntentFilter;
 import android.os.Bundle;
 
-import com.blue.sky.androidwebapp.R;
+import com.blue.sky.component.R;
 
 public class ApkManagerActivity extends Activity {
 
@@ -17,7 +17,7 @@ public class ApkManagerActivity extends Activity {
 	}
 
 	/**
-	 * 代码方式：一般在Activity的onStart()方法中注册监听，在onDestroy()方法中注销监听（也可以在onStop()方法中注销，其生命周期注销时结束）
+	 * 锟斤拷锟诫方式锟斤拷一锟斤拷锟斤拷Activity锟斤拷onStart()锟斤拷锟斤拷锟斤拷注锟斤拷锟斤拷锟斤拷锟給nDestroy()锟斤拷锟斤拷锟斤拷注锟斤拷锟斤拷锟揭诧拷锟斤拷锟斤拷锟給nStop()锟斤拷锟斤拷锟斤拷注锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷注锟斤拷时锟斤拷锟斤拷
 	 */
 	@Override
 	public void onStart() {

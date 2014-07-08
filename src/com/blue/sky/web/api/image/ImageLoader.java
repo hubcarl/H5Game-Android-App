@@ -1,5 +1,13 @@
 package com.blue.sky.web.api.image;
 
+import android.app.Activity;
+import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
+import android.widget.ImageView;
+import com.blue.sky.component.R;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -10,15 +18,6 @@ import java.util.Map;
 import java.util.WeakHashMap;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-
-import android.app.Activity;
-import android.content.Context;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.drawable.BitmapDrawable;
-import android.widget.ImageView;
-
-import com.blue.sky.androidwebapp.R;
 
 public class ImageLoader {
 
@@ -31,9 +30,9 @@ public class ImageLoader {
 
 	/**
 	 * @param context
-	 *            ÉÏÏÂÎÄ¶ÔÏó
+	 *            ï¿½ï¿½ï¿½ï¿½ï¿½Ä¶ï¿½ï¿½ï¿½
 	 * @param flag
-	 *            trueÎªsource×ÊÔ´£¬falseÎªbackground×ÊÔ´
+	 *            trueÎªsourceï¿½ï¿½Ô´ï¿½ï¿½falseÎªbackgroundï¿½ï¿½Ô´
 	 */
 	public ImageLoader(Context context, boolean flag) {
 		fileCache = new FileCache(context);
@@ -76,11 +75,11 @@ public class ImageLoader {
 	private Bitmap getBitmap(String url) {
 		try {
 			File f = fileCache.getFile(url);
-			// ´Ósd¿¨
+			// ï¿½ï¿½sdï¿½ï¿½
 			Bitmap b = onDecodeFile(f);
 			if (b != null)
 				return b;
-			// ´ÓÍøÂç
+			// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 			Bitmap bitmap = null;
 			System.out.println("ImageLoader-->download");
 			HttpUtil.CopyStream(url, f);
@@ -104,18 +103,18 @@ public class ImageLoader {
 	}
 
 	/**
-	 * ½âÂëÍ¼ÏñÓÃÀ´¼õÉÙÄÚ´æÏûºÄ
+	 * ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú´ï¿½ï¿½ï¿½ï¿½
 	 * 
 	 * @param f
 	 * @return
 	 */
 	public Bitmap decodeFile(File f) {
 		try {
-			// ½âÂëÍ¼Ïñ´óĞ¡
+			// ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½ï¿½Ğ¡
 			BitmapFactory.Options o = new BitmapFactory.Options();
 			o.inJustDecodeBounds = true;
 			BitmapFactory.decodeStream(new FileInputStream(f), null, o);
-			// ÕÒµ½ÕıÈ·µÄ¿Ì¶ÈÖµ£¬ËüÓ¦¸ÃÊÇ2µÄÃİ¡£
+			// ï¿½Òµï¿½ï¿½ï¿½È·ï¿½Ä¿Ì¶ï¿½Öµï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½ï¿½2ï¿½ï¿½ï¿½İ¡ï¿½
 			final int REQUIRED_SIZE = 70;
 			int width_tmp = o.outWidth, height_tmp = o.outHeight;
 			int scale = 1;
@@ -135,7 +134,7 @@ public class ImageLoader {
 	}
 
 	/**
-	 * ÈÎÎñ¶ÓÁĞ
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	 * 
 	 * @author Scorpio.Liu
 	 * 
@@ -179,7 +178,7 @@ public class ImageLoader {
 	}
 
 	/**
-	 * ÏÔÊ¾Î»Í¼ÔÚUIÏß³Ì
+	 * ï¿½ï¿½Ê¾Î»Í¼ï¿½ï¿½UIï¿½ß³ï¿½
 	 * 
 	 * @author Scorpio.Liu
 	 * 

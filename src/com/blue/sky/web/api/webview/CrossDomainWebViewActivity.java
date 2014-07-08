@@ -3,7 +3,7 @@ package com.blue.sky.web.api.webview;
 import android.app.Activity;
 import android.os.Bundle;
 
-import com.blue.sky.androidwebapp.R;
+import com.blue.sky.component.R;
 
 
 public class CrossDomainWebViewActivity extends Activity {

@@ -17,4 +17,16 @@
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
 
+    <style name="weibo_tab">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingTop">8dip</item>
+        <item name="android:paddingBottom">4dip</item>
+        <item name="android:background">@drawable/weibolist_bottombar_itembg_selector</item>
+        <item name="android:textColor">@color/weibolist_bottombar_textcolor_selector</item>
+        <item name="android:button">@null</item>
+    </style>
 </resources>

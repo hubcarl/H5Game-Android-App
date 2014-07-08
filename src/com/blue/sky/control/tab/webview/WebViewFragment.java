@@ -8,7 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.blue.sky.androidwebapp.R;
+import com.blue.sky.component.R;
 import com.blue.sky.web.api.webview.CrossDomainWebView;
 
 @SuppressLint("ValidFragment")

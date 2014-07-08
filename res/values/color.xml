@@ -3,4 +3,7 @@
     <color name="default_circle_indicator_fill_color">#FFFFFFFF</color>
     <color name="default_circle_indicator_page_color">#00000000</color>
     <color name="default_circle_indicator_stroke_color">#FFDDDDDD</color>
+    <color name="transparent">#0000</color>
+    <color name="white">#fff</color>
+    <color name="weibo_listtab_off">#8d8d8d</color>
 </resources>

@@ -1,15 +1,14 @@
 package com.blue.sky.handle;
 
-import java.util.Timer;
-import java.util.TimerTask;
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.widget.TextView;
+import com.blue.sky.component.R;
 
-import com.blue.sky.androidwebapp.R;
+import java.util.Timer;
+import java.util.TimerTask;
 
 /**
  * http://www.imyukin.com/?p=268

@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.TextView;
 
-import com.blue.sky.androidwebapp.R;
+import com.blue.sky.component.R;
 import com.blue.sky.animate.MyGuideViewActivity;
 import com.blue.sky.animate.SimpleGesture;
 import com.blue.sky.web.api.webview.CrossDomainWebViewActivity;

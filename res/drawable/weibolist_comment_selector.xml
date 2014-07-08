@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 微博列表界面tab栏评论 按钮 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/weibo_listab_comment_on" android:state_pressed="true" />
+    <item android:drawable="@drawable/weibo_listab_comment_on" android:state_checked="true" />
+    <item android:drawable="@drawable/weibo_listab_comment_off" />
+
+</selector>

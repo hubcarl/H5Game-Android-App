@@ -11,7 +11,7 @@ import android.view.View.OnTouchListener;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-import com.blue.sky.androidwebapp.R;
+import com.blue.sky.component.R;
 public class SimpleGesture extends Activity implements OnTouchListener,
 		OnGestureListener {
 	
@@ -47,11 +47,11 @@ public class SimpleGesture extends Activity implements OnTouchListener,
 		 if (e1.getX()-e2.getX() > FLING_MIN_DISTANCE 
 	                && Math.abs(velocityX) > FLING_MIN_VELOCITY) { 
 	            // Fling left 
-	            Toast.makeText(this, "Ïò×óÊÖÊÆ", Toast.LENGTH_SHORT).show(); 
+	            Toast.makeText(this, "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", Toast.LENGTH_SHORT).show(); 
 	        } else if (e2.getX()-e1.getX() > FLING_MIN_DISTANCE 
 	                && Math.abs(velocityX) > FLING_MIN_VELOCITY) { 
 	            // Fling right 
-	            Toast.makeText(this, "ÏòÓÒÊÖÊÆ", Toast.LENGTH_SHORT).show(); 
+	            Toast.makeText(this, "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", Toast.LENGTH_SHORT).show(); 
 	        } 
 	        return false; 
 	}
