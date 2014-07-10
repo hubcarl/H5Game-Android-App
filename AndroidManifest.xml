@@ -5,8 +5,8 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="8"
-        android:targetSdkVersion="15" />
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
 
     <application
         android:allowBackup="true"
@@ -33,6 +33,10 @@
         <activity android:name="com.blue.sky.animate.MyGuideViewActivity" >
         </activity>
         <activity android:name="com.blue.sky.tab.fragment.MainActivity" >
+        </activity>
+        <activity android:name="com.blue.sky.tab.tabfragment.MainActivity" >
+        </activity>
+        <activity android:name="com.blue.sky.tab.navigation.MainActivity" >
         </activity>
         <activity
             android:name="com.blue.sky.message.ApkManagerActivity"

@@ -14,10 +14,10 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
 import android.view.KeyEvent;
-
 import com.blue.sky.component.R;
 import com.blue.sky.control.tab.webview.WebViewFragment;
 import com.blue.sky.control.tab.webview.WebViewPagerAdapter;
+import com.blue.sky.main.MainTestFragment;
 
 @TargetApi(Build.VERSION_CODES.HONEYCOMB)
 public class WebViewTabActivity extends FragmentActivity implements ActionBar.TabListener {
@@ -34,7 +34,7 @@ public class WebViewTabActivity extends FragmentActivity implements ActionBar.Ta
 	    final ActionBar actionBar = getActionBar();
 	    actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
 	    actionBar.setDisplayOptions(0,ActionBar.DISPLAY_SHOW_HOME|ActionBar.DISPLAY_SHOW_TITLE );
-        //����2
+
         //bar.setDisplayShowHomeEnabled(false);  
         //bar.setDisplayShowTitleEnabled(false);
 	    
@@ -43,11 +43,11 @@ public class WebViewTabActivity extends FragmentActivity implements ActionBar.Ta
 	    Fragment[] fragments = {
 	      new WebViewFragment("http://www.baidu.com/" , app),
 	      new WebViewFragment("http://www.bing.com/" , app),
-	      new WebViewFragment("http://codestudy.sinaapp.com/mobile/" , app),
 	      new WebViewFragment("file:///android_asset/h5/list.html", app),
+          new MainTestFragment(app)
 	    };
 	    
-	    CharSequence[] titles = {"�ٶ�","Bing","Code","H5"};
+	    CharSequence[] titles = {"百度","Bing","H5","测试入口"};
 	    webViewPagerAdapter = new WebViewPagerAdapter(getSupportFragmentManager(),fragments,titles);
 
 	    viewPager = (ViewPager) findViewById(R.id.pager);
@@ -88,16 +88,13 @@ public class WebViewTabActivity extends FragmentActivity implements ActionBar.Ta
 		{
 			if (keyCode == KeyEvent.KEYCODE_BACK )
 			{
-				// �����˳��Ի���
+
 				AlertDialog isExit = new AlertDialog.Builder(this).create();
-				// ���öԻ������
-				isExit.setTitle("ϵͳ��ʾ");
-				// ���öԻ�����Ϣ
-				isExit.setMessage("ȷ��Ҫ�˳���");
-				// ���ѡ��ť��ע�����
-				isExit.setButton("ȷ��", listener);
-				isExit.setButton2("ȡ��", listener);
-				// ��ʾ�Ի���
+				isExit.setTitle("温馨提示");
+				isExit.setMessage("退出客户端?");
+				isExit.setButton("取消", listener);
+				isExit.setButton2("确定", listener);
+
 				isExit.show();
 
 			}
@@ -105,17 +102,16 @@ public class WebViewTabActivity extends FragmentActivity implements ActionBar.Ta
 			return false;
 			
 		}
-		/**����Ի��������button����¼�*/
 		DialogInterface.OnClickListener listener = new DialogInterface.OnClickListener()
 		{
 			public void onClick(DialogInterface dialog, int which)
 			{
 				switch (which)
 				{
-				case AlertDialog.BUTTON_POSITIVE:// "ȷ��"��ť�˳�����
+				case AlertDialog.BUTTON_POSITIVE:
 					finish();
 					break;
-				case AlertDialog.BUTTON_NEGATIVE:// "ȡ��"�ڶ�����ťȡ��Ի���
+				case AlertDialog.BUTTON_NEGATIVE:
 					break;
 				default:
 					break;
@@ -135,9 +131,7 @@ public class WebViewTabActivity extends FragmentActivity implements ActionBar.Ta
 	                String reason = intent.getStringExtra(SYSTEM_REASON);
 	                if (reason != null) {
 	                    if (reason.equals(SYSTEM_HOME_KEY)) {
-	                        // home key�����
 	                    } else if (reason.equals(SYSTEM_RECENT_APPS)) {
-	                        // long home key�����
 	                    }
 	                }
 	            }
