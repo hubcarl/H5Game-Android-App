@@ -15,6 +15,17 @@
     <orderEntry type="jdk" jdkName="Android API 19 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="android-support-v41" level="project" />
+    <orderEntry type="module-library">
+      <library name="PHP">
+        <CLASSES>
+          <root url="file://D:/phpStudy/phpb" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://D:/phpStudy/phpb" />
+        </SOURCES>
+      </library>
+    </orderEntry>
   </component>
 </module>
 

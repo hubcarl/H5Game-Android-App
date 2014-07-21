@@ -39,3 +39,4 @@ captures/
 # Keystore files
 *.jks
 /.settings
+/assets/h5

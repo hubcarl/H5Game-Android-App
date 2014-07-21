@@ -74,14 +74,15 @@ public class CrossDomainWebView extends WebView {
 		this.setWebViewClient(new WebViewClient()
 	    {
 	        public boolean shouldOverrideUrlLoading(WebView view, String url)
-	        {               
+	        {
+                Log.d("H5",">>>shouldOverrideUrlLoading url:" + url);
 	            return false;                            
 	        }
 
 	        @Override
 	        public void onPageFinished(WebView view, String url)
 	        {
-	        	Log.d("H5",">>>url:" + url);
+	        	Log.d("H5",">>>onPageFinished url:" + url);
 	        	setting.setBlockNetworkImage(false); 
 	            super.onPageFinished(view, url);
 	        }
@@ -89,16 +90,41 @@ public class CrossDomainWebView extends WebView {
 	        @Override
 	        public void onPageStarted(WebView view, String url, Bitmap favicon)
 	        {
+                Log.d("H5",">>>onPageStarted url:" + url);
 	            super.onPageStarted(view, url, favicon);
 	          
-	        }  
+	        }
+
+            @Override
+            public void onLoadResource(WebView view, String url) {
+                Log.d("H5",">>>onLoadResource url:" + url);
+                super.onLoadResource(view,url);
+            }
+
+            @Override
+            public WebResourceResponse shouldInterceptRequest(WebView view,String url){
+                Log.d("H5",">>>shouldInterceptRequest url:" + url);
+               return super.shouldInterceptRequest(view,url);
+            }
+
+
 	    }); 
 		
 		this.setWebChromeClient(new WebChromeClient() {
+
+            @Override
 			public boolean onConsoleMessage(ConsoleMessage cm) {
 				Log.d("H5",cm.message() + " (" + cm.lineNumber()+ ")" );
 				return true;
 			}
+
+            @Override
+            public boolean onJsPrompt(WebView view, String url, String message, String defaultValue, JsPromptResult result) {
+                Log.d("H5",">>>onJsPrompt:" + url +" message:" + message);
+                result.confirm("onJsPrompt");
+                return true;
+            }
+
 		});
 	}
 	
