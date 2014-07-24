@@ -114,15 +114,26 @@ public class CrossDomainWebView extends WebView {
 
             @Override
 			public boolean onConsoleMessage(ConsoleMessage cm) {
-				Log.d("H5",cm.message() + " (" + cm.lineNumber()+ ")" );
+				Log.d(">>>H5Test onConsoleMessage",cm.message() + " (" + cm.lineNumber()+ ")" );
 				return true;
 			}
 
             @Override
             public boolean onJsPrompt(WebView view, String url, String message, String defaultValue, JsPromptResult result) {
-                Log.d("H5",">>>onJsPrompt:" + url +" message:" + message);
-                result.confirm("onJsPrompt");
+                Log.d(">>>H5Test onJsPrompt",">>>onJsPrompt:" + url +" message:" + message);
+                result.confirm("onJsPrompt receive message:" + message + " result:" + loadData());
                 return true;
+            }
+
+            private int loadData(){
+               int sum = 0;
+               long start = System.currentTimeMillis();
+               for(int i=0;i<1000000;i++){
+                   sum+=i;
+               }
+               long end = System.currentTimeMillis();
+               Log.d(">>>H5Test onJsPrompt loadData:",(end-start) + "ms");
+               return sum;
             }
 
 		});

@@ -44,10 +44,11 @@ public class WebViewTabActivity extends FragmentActivity implements ActionBar.Ta
 	      new WebViewFragment("http://www.baidu.com/" , app),
 	      new WebViewFragment("http://www.bing.com/" , app),
 	      new WebViewFragment("file:///android_asset/h5/list.html", app),
+          new WebViewFragment("file:///android_asset/prompt.html", app),
           new MainTestFragment(app)
 	    };
 	    
-	    CharSequence[] titles = {"百度","Bing","H5","测试入口"};
+	    CharSequence[] titles = {"百度","Bing","H5","测试","TAB"};
 	    webViewPagerAdapter = new WebViewPagerAdapter(getSupportFragmentManager(),fragments,titles);
 
 	    viewPager = (ViewPager) findViewById(R.id.pager);
