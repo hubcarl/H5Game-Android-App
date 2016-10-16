@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="16dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:orientation="vertical">
+        <LinearLayout android:layout_width="match_parent"
+                  android:layout_marginTop="16dp"
+                  android:layout_marginBottom="8dp"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  android:gravity="center"
+                  android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/btn_play"
+                    android:text="可以玩"
+                    android:textSize="18sp"
+                    android:layout_weight="1"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:gravity="center"
+                    android:textColor="@color/light_blank"
+                    android:background="@color/light_gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:id="@+id/btn_un_play"
+                    android:text="不可玩"
+                    android:textSize="18sp"
+                    android:layout_weight="1"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:gravity="center"
+                    android:textColor="@color/light_blank"
+                    android:background="@color/light_gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <HorizontalScrollView
+                android:id="@+id/imageHorizontalView"
+                android:visibility="gone"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:scrollbars="none">
+            <LinearLayout android:id="@+id/imageContainer"
+                          android:layout_width="160dp"
+                          android:layout_height="240dp"
+                          android:background="@color/white"
+                          android:orientation="horizontal">
+            </LinearLayout>
+        </HorizontalScrollView>
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="16dp"
+                      android:orientation="horizontal">
+            <TextView
+                    android:layout_marginLeft="2dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/panel_title2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:drawableLeft="@drawable/icon_left_line"
+                    android:text=" 游戏简介"
+                    />
+        </LinearLayout>
+        <TextView
+                android:id="@+id/game_desc"
+                android:layout_marginLeft="2dp"
+                android:textSize="14sp"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/panel_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text=""></TextView>
+        <View style="@style/line_gray" android:id="@+id/line" android:layout_marginTop="8dp"></View>
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="16dp"
+                      android:orientation="horizontal">
+            <TextView
+                    android:layout_marginLeft="2dp"
+                    android:textSize="18sp"
+                    android:textColor="@color/panel_title2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:drawableLeft="@drawable/icon_left_line"
+                    android:text=" 游戏指南"
+                    />
+        </LinearLayout>
+        <TextView
+                android:id="@+id/game_guide"
+                android:layout_marginLeft="2dp"
+                android:textSize="14sp"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/panel_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text=""></TextView>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ******************************个人设置-消息提醒信息***************************************************** -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include android:id="@+id/header" layout="@layout/sky_activity_header"></include>
+
+    <RelativeLayout
+        android:id="@+id/message1"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/setting_item_height"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/common_bg_preference_first"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="新消息通知"
+            android:textColor="#000"
+            android:textSize="@dimen/default_text_size" />
+
+        <ImageButton
+            android:id="@+id/setting_notifi_newmsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:src="@drawable/icon_switch_on" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/message2"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/setting_item_height"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/common_bg_preference_last"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="显示消息通知内容"
+            android:textColor="#000"
+            android:textSize="@dimen/default_text_size" />
+
+        <ImageButton
+            android:id="@+id/setting_show_msg_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:src="@drawable/icon_switch_on" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/notice1"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/setting_item_height"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/common_bg_preference_first"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="声音提醒"
+            android:textColor="#000"
+            android:textSize="@dimen/default_text_size" />
+
+        <ImageButton
+            android:id="@+id/setting_voice_notifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:src="@drawable/icon_switch_on" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/notice2"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/setting_item_height"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/common_bg_preference_last"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="震动提醒"
+            android:textColor="#000"
+            android:textSize="@dimen/default_text_size" />
+
+        <ImageButton
+            android:id="@+id/setting_shake_notifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:src="@drawable/icon_switch_on" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/messageTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:text="关闭消息通知后将不会收到消息通知"
+        android:textColor="@color/light_more_gray"
+        android:textSize="16dp" />
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <com.blue.sky.control.pullrefresh.PullToRefreshScrollView
+                xmlns:ptr="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/pull_refresh_scrollview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                ptr:ptrHeaderTextColor="@color/light_gray"
+                ptr:ptrHeaderSubTextColor="@color/light_gray"
+                ptr:ptrAnimationStyle="rotate"
+                ptr:ptrMode="pullFromStart"
+                android:scrollbars="none"
+                android:orientation="vertical">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/light_gray"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <com.blue.sky.control.imagescroll.MyImageScroll
+                    android:id="@+id/myvp"
+                    android:visibility="gone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="160dp" />
+
+            <LinearLayout
+                    android:id="@+id/vb"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="-12dp"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+            </LinearLayout>
+
+            <ImageView android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:minHeight="200dp"
+                       android:maxHeight="240dp"
+                       android:scaleType="fitXY"
+                       android:visibility="gone"
+                       android:src="@drawable/test_bae"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                <com.blue.sky.common.control.CategoryNavPanel
+                        android:id="@+id/categoryNavPanel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                </com.blue.sky.common.control.CategoryNavPanel>
+                <!--<FrameLayout-->
+                        <!--android:id="@+id/banner_ad_container"-->
+                        <!--android:visibility="gone"-->
+                        <!--android:layout_marginTop="2dp"-->
+                        <!--android:layout_marginBottom="0dp"-->
+                        <!--android:background="@color/white"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="72dip"/>-->
+
+                <com.blue.sky.common.control.MyCommonPanel
+                        android:id="@+id/recommendPanel"
+                        android:layout_marginTop="2dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                </com.blue.sky.common.control.MyCommonPanel>
+
+                <com.blue.sky.common.control.MyCommonPanel
+                        android:id="@+id/hotPanel"
+                        android:layout_marginTop="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                </com.blue.sky.common.control.MyCommonPanel>
+
+                <com.blue.sky.common.control.MyCommonPanel
+                        android:id="@+id/latestPanel"
+                        android:layout_marginTop="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                </com.blue.sky.common.control.MyCommonPanel>
+
+            </LinearLayout>
+        </LinearLayout>
+    </com.blue.sky.control.pullrefresh.PullToRefreshScrollView>
+</LinearLayout>

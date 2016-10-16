@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/light_gray"
+    android:orientation="vertical" >
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <LinearLayout
+                android:id="@+id/setting_login"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/common_bg_preference_single"
+                android:layout_marginTop="8dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/setting_user_iocn"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_user_default"
+                    android:scaleType="fitXY"
+                     />
+
+                <TextView
+                    android:id="@+id/setting_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="5dp"
+                    android:text="登录"
+                    android:textColor="@color/setting_default_text_main_383838"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                    android:id="@+id/setting_favorite"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/setting_item_height"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/common_bg_preference_first"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="10dp" >
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawableLeft="@drawable/icon_favorite"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:text="我的收藏"
+                        android:textColor="@color/setting_default_text_main_383838"
+                        android:textSize="@dimen/default_text_size" />
+
+                <ImageView style="@style/setting_right_img"  />
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/setting_password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/setting_item_height"
+                    android:background="@drawable/common_bg_preference_last"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="10dp" >
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawableLeft="@drawable/setting_icon_password"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:text="密码修改"
+                        android:textColor="@color/setting_default_text_main_383838"
+                        android:textSize="@dimen/default_text_size" />
+
+                <ImageView style="@style/setting_right_img"  />
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                    android:id="@+id/setting_game"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/setting_item_height"
+                    android:background="@drawable/common_bg_preference_first"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="12dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="10dp" >
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawableLeft="@drawable/icon_game"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:text="精选游戏"
+                        android:textColor="@color/setting_default_text_main_383838"
+                        android:textSize="@dimen/default_text_size" />
+
+                <ImageView style="@style/setting_right_img"  />
+            </RelativeLayout>
+            <RelativeLayout
+                    android:id="@+id/setting_software"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/setting_item_height"
+                    android:background="@drawable/common_bg_preference_middle"
+                    android:clickable="true"
+                    android:visibility="gone"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="10dp" >
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawableLeft="@drawable/icon_game"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:text="精品软件"
+                        android:textColor="@color/setting_default_text_main_383838"
+                        android:textSize="@dimen/default_text_size" />
+
+                <ImageView style="@style/setting_right_img"  />
+            </RelativeLayout>
+            <RelativeLayout
+                    android:id="@+id/setting_soft_update"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/setting_item_height"
+                    android:background="@drawable/common_bg_preference_middle"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="10dp" >
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawableLeft="@drawable/setting_icon_update"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:text="软件更新"
+                        android:textColor="@color/setting_default_text_main_383838"
+                        android:textSize="@dimen/default_text_size" />
+
+                <ImageView style="@style/setting_right_img"  />
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/setting_feedback"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/setting_item_height"
+                    android:background="@drawable/common_bg_preference_last"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="10dp" >
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawableLeft="@drawable/icon_feedback"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:text="意见反馈"
+                        android:textColor="@color/setting_default_text_main_383838"
+                        android:textSize="@dimen/default_text_size" />
+
+                <ImageView style="@style/setting_right_img"  />
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/setting_set"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/setting_item_height"
+                    android:background="@drawable/common_bg_preference_first"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="12dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="10dp" >
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawableLeft="@drawable/icon_setting"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:text="设置"
+                        android:textColor="@color/setting_default_text_main_383838"
+                        android:textSize="@dimen/default_text_size" />
+
+                <ImageView style="@style/setting_right_img"  />
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/setting_about"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/setting_item_height"
+                    android:background="@drawable/common_bg_preference_last"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="10dp" >
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawableLeft="@drawable/icon_app_info"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:text="关于"
+                        android:textColor="@color/setting_default_text_main_383838"
+                        android:textSize="@dimen/default_text_size" />
+
+                <ImageView style="@style/setting_right_img"  />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/setting_exit"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/default_item_height"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="48dp"
+                android:background="@drawable/common_btn_style_red"
+                android:gravity="center"
+                android:padding="4dp"
+                android:visibility="gone"
+                android:text="退出帐号"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

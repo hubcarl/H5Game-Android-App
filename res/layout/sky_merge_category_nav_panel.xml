@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+    <LinearLayout style="@style/home_nav_panel"
+                  android:layout_marginTop="4dp"
+                  android:orientation="horizontal">
+        <TextView
+                android:id="@+id/tab_nav_one"
+                style="@style/home_nav_style"
+                android:layout_marginRight="1dp"
+                android:background="@drawable/sky_item_click_selector"
+                android:text="Android专题"/>
+        <TextView
+                android:id="@+id/tab_nav_two"
+                style="@style/home_nav_style"
+                android:layout_marginLeft="1dp"
+                android:background="@drawable/sky_item_click_selector"
+                android:text="Node.js专题"/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/home_nav_panel"
+                  android:orientation="horizontal">
+        <TextView
+                android:id="@+id/tab_nav_three"
+                style="@style/home_nav_style"
+                android:layout_marginRight="1dp"
+                android:background="@drawable/sky_item_click_selector"
+                android:text="Java专题"/>
+        <TextView
+                android:id="@+id/tab_nav_four"
+                style="@style/home_nav_style"
+                android:layout_marginLeft="1dp"
+                android:background="@drawable/sky_item_click_selector"
+                android:text="Web专题"/>
+    </LinearLayout>
+</LinearLayout>

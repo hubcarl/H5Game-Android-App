@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingLeft="8dp"
+              android:paddingRight="8dp"
+              android:background="@drawable/sky_item_click_selector"
+              android:orientation="vertical">
+        <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:layout_weight="1"
+                android:lineSpacingExtra="3dp"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:textSize="16dp"
+                android:textColor="@color/list_item_title"
+                android:text="">
+        </TextView>
+        <TextView
+                android:id="@+id/createTime"
+                android:layout_below="@+id/title"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/light_gray_summery"
+                android:paddingTop="4dp"
+                android:paddingBottom="8dp"
+                android:layout_marginRight="8dp"
+                android:textSize="14dp"
+                android:text="" >
+        </TextView>
+        <TextView
+                android:id="@+id/summery"
+                android:visibility="gone"
+                android:layout_below="@+id/createTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/light_gray_summery"
+                android:paddingBottom="8dp"
+                android:lineSpacingExtra="3dp"
+                android:singleLine="false"
+                android:textSize="14dp"
+                android:text="" >
+        </TextView>
+</RelativeLayout>

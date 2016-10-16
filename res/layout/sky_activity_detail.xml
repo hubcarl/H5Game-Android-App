@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+    <include android:id="@+id/header" layout="@layout/sky_activity_header" ></include>
+    <ProgressBar android:id="@+id/webview_progress_bar"
+                 android:layout_width="fill_parent"
+                 android:layout_below="@+id/header"
+                 style="?android:attr/progressBarStyleHorizontal"
+                 android:progressDrawable="@drawable/sky_progress_style"
+                 android:layout_height="2dp" />
+    <com.blue.sky.control.webview.CrossDomainWebView android:id="@+id/web_app_view"
+        android:layout_below="@+id/webview_progress_bar"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:scrollbars="vertical">
+    </com.blue.sky.control.webview.CrossDomainWebView>
+
+    <RelativeLayout
+                  android:id="@+id/ad_container"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:visibility="gone"
+                  android:layout_alignParentBottom="true"
+                  android:orientation="vertical" >
+        <FrameLayout
+                android:id="@+id/banner_ad_container"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="60dip"/>
+
+        <ImageView
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/banner_ad_container"
+                android:id="@+id/ad_close"
+                android:src="@drawable/icon_close_small"
+                android:layout_marginTop="-60dp"
+                android:layout_width="16dp"
+                android:layout_height="16dp" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+            android:id="@+id/liner_empty"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+        <com.blue.sky.control.loading.CustomClipLoading
+                android:id="@+id/loading"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <TextView
+                android:id="@+id/emptyText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/loading_text"
+                android:textSize="20sp"
+                android:layout_marginTop="4dp"
+                android:textColor="?android:attr/textColorSecondary"
+                android:paddingTop="10dip"
+                android:lineSpacingMultiplier="0.92"
+                android:gravity="center"/>
+        <TextView
+                style="@style/btn_green_bg"
+                android:id="@+id/btn_retry"
+                android:layout_width="200dp"
+                android:layout_marginTop="4dp"
+                android:text="点击重试"
+                android:visibility="gone" />
+    </LinearLayout>
+</RelativeLayout>

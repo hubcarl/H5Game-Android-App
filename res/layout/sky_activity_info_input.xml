@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ******************************输入***************************************************** -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include android:id="@+id/header" layout="@layout/sky_activity_header"></include>
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etInput"
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:background="@drawable/common_bg_input_bar_hover"
+            android:gravity="top|left"
+            android:imeOptions="actionDone"
+            android:isScrollContainer="true"
+            android:paddingTop="4dp"
+            android:paddingLeft="10dp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp">
+
+        <TextView
+            android:id="@+id/zishu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="1"
+            android:layout_alignParentTop="true"
+            android:paddingRight="10dp"/>
+
+        <Button
+            android:id="@+id/bt_express"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/bt_clear"
+            android:layout_alignBottom="@+id/bt_clear"
+            android:layout_alignParentLeft="true"
+            android:text="表情"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/bt_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/zishu"
+            android:text="清除"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

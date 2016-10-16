@@ -13,5 +13,21 @@
     <bool name="default_circle_indicator_centered">true</bool>
     <bool name="default_circle_indicator_snap">false</bool>
 
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
 
+    <dimen name="button_height">45.0dip</dimen>
+    <dimen name="bottom_tab_font_size">12.0dip</dimen>
+    <dimen name="bottom_tab_padding_up">5.0dip</dimen>
+    <dimen name="bottom_tab_padding_drawable">2.0dip</dimen>
+
+    <dimen name="header_bg_height">50dp</dimen>
+    <dimen name="default_item_height">45dp</dimen>
+    <dimen name="default_item_space">15dp</dimen>
+    <dimen name="default_text_size">15sp</dimen>
+    <dimen name="default_line_size">1dp</dimen>
+    <dimen name="setting_item_height">48dp</dimen>
 </resources>

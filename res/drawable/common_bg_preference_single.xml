@@ -1,0 +1,5 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_focused="true" android:drawable="@drawable/common_bg_preference_single_hover"></item>
+    <item android:state_pressed="true" android:drawable="@drawable/common_bg_preference_single_hover"></item>
+    <item android:drawable="@drawable/common_bg_preference_single_nor"></item>
+</selector>

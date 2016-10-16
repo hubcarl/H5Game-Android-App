@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+    <!--放置PagerSlidingTabStrip的布局，应该用LinearLayout，
+    而不是用RelativeLayout！ 放置在Activity中的时候，用RelativeLayout是没有问题的-->
+    <com.blue.sky.control.astuetz.PagerSlidingTabStrip
+            android:id="@+id/code_pager_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="48dip"
+            android:background="@drawable/pagerslidingtabextend_tabs_pattern"/>
+
+    <android.support.v4.view.ViewPager
+            android:id="@+id/code_pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item type="drawable" name="transparent_background">#99000000</item>
+	<item type="drawable" name="transparent">#00000000</item>
+	 <item type="drawable" name="list_row_mormal">#ffffffff</item>
+    <item type="drawable" name="list_row_zeng">#fffffddd</item>
+    <item type="drawable" name="list_row_pressed">#ffeeeeee</item>
+</resources>

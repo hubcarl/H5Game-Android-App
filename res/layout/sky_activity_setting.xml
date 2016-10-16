@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/setting_space_background"
+    android:orientation="vertical" >
+    <include android:id="@+id/header" layout="@layout/sky_activity_header" ></include>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp" >
+            <RelativeLayout
+                android:id="@+id/setting_information"
+                android:layout_width="fill_parent"
+                android:layout_height="56.5dp"
+                android:background="@drawable/common_bg_preference_single"
+                android:layout_marginTop="5dp"
+                android:clickable="true"
+                android:visibility="gone"
+                android:paddingLeft="8dp"
+                android:paddingRight="10dp" >
+
+                <ImageView
+                    android:id="@+id/setting_user_iocn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_default_avatar"
+                    android:scaleType="fitXY"
+                     />
+
+                <TextView
+                    android:id="@+id/setting_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/setting_user_iocn"
+                    android:paddingLeft="5dp"
+                    android:text="个人信息"
+                    android:textColor="@color/setting_default_text_main_383838"
+                    android:textSize="@dimen/default_text_size" />
+
+                <ImageView style="@style/setting_right_img" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/setting_secret"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/setting_item_height"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/common_bg_preference_first"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="10dp" >
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawableLeft="@drawable/setting_icon_notice"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:text="消息提醒"
+                        android:textColor="@color/setting_default_text_main_383838"
+                        android:textSize="@dimen/default_text_size" />
+
+                <ImageView style="@style/setting_right_img" android:visibility="invisible" />
+            </RelativeLayout>
+
+             <LinearLayout
+                android:id="@+id/setting_notice"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/common_bg_preference_last"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="8dp"
+                android:paddingRight="10dp" >
+
+
+                 <RelativeLayout
+                         android:id="@+id/notice1"
+                         android:layout_width="fill_parent"
+                         android:layout_height="@dimen/setting_item_height"
+                         android:layout_marginLeft="10dp"
+                         android:layout_marginRight="10dp"
+                         android:layout_marginTop="10dp"
+                         android:layout_marginBottom="10dp"
+                         android:gravity="center_vertical"
+                         android:paddingLeft="8dp"
+                         android:paddingRight="8dp" >
+
+                     <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_centerVertical="true"
+                             android:gravity="center_vertical"
+                             android:text="声音提醒"
+                             android:textColor="#000"
+                             android:textSize="@dimen/default_text_size" />
+
+                     <ImageButton
+                             android:id="@+id/setting_voice_notifi"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:maxHeight="40px"
+                             android:maxWidth="80px"
+                             android:layout_alignParentRight="true"
+                             android:layout_centerVertical="true"
+                             android:background="@null"
+                             android:src="@drawable/icon_switch_on" />
+
+                     <ImageView style="@style/setting_right_img" android:visibility="invisible" />
+                 </RelativeLayout>
+                 <View style="@style/panel_line_gray" android:id="@+id/line"></View>
+                 <RelativeLayout
+                         android:id="@+id/notice2"
+                         android:layout_width="fill_parent"
+                         android:layout_height="@dimen/setting_item_height"
+                         android:layout_marginLeft="10dp"
+                         android:layout_marginRight="10dp"
+                         android:layout_marginTop="10dp"
+                         android:layout_marginBottom="10dp"
+                         android:gravity="center_vertical"
+                         android:paddingLeft="8dp"
+                         android:paddingRight="8dp" >
+
+                     <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_centerVertical="true"
+                             android:gravity="center_vertical"
+                             android:text="震动提醒"
+                             android:textColor="#000"
+                             android:textSize="@dimen/default_text_size" />
+
+                     <ImageButton
+                             android:id="@+id/setting_shake_notifi"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:maxHeight="40px"
+                             android:maxWidth="80px"
+                             android:layout_alignParentRight="true"
+                             android:layout_centerVertical="true"
+                             android:background="@null"
+                             android:src="@drawable/icon_switch_on" />
+                 </RelativeLayout>
+
+                 <TextView
+                         android:id="@+id/messageTip"
+                         android:visibility="gone"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:paddingLeft="20dp"
+                         android:paddingTop="10dp"
+                         android:text="关闭消息通知后将不会收到消息通知"
+                         android:textColor="@color/light_gray"
+                         android:textSize="16dp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                    android:id="@+id/setting_software"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/setting_item_height"
+                    android:background="@drawable/common_bg_preference_first"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="12dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="10dp" >
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawableLeft="@drawable/setting_icon_password"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:text="精品推荐"
+                        android:textColor="@color/setting_default_text_main_383838"
+                        android:textSize="@dimen/default_text_size" />
+
+                <ImageView style="@style/setting_right_img"  />
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/setting_money"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/setting_item_height"
+                    android:background="@drawable/common_bg_preference_last"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="10dp" >
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawableLeft="@drawable/setting_icon_update"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:text="赚钱去了"
+                        android:textColor="@color/setting_default_text_main_383838"
+                        android:textSize="@dimen/default_text_size" />
+
+                <ImageView style="@style/setting_right_img"  />
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                    android:id="@+id/setting_password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/setting_item_height"
+                    android:background="@drawable/common_bg_preference_first"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="12dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="10dp" >
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawableLeft="@drawable/setting_icon_password"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:text="密码修改"
+                        android:textColor="@color/setting_default_text_main_383838"
+                        android:textSize="@dimen/default_text_size" />
+
+                <ImageView style="@style/setting_right_img"  />
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/soft_update"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/setting_item_height"
+                    android:background="@drawable/common_bg_preference_last"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="10dp" >
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:drawableLeft="@drawable/setting_icon_update"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:text="软件更新"
+                        android:textColor="@color/setting_default_text_main_383838"
+                        android:textSize="@dimen/default_text_size" />
+
+                <ImageView style="@style/setting_right_img"  />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/setting_exit"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/default_item_height"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="48dp"
+                android:background="@drawable/common_btn_style_red"
+                android:gravity="center"
+                android:padding="4dp"
+                android:visibility="gone"
+                android:text="退出帐号"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

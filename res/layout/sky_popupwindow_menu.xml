@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#ff232323">
+    <TextView 
+        android:id="@+id/action_share"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/icon_share"
+        android:background="@drawable/sky_action_bar_click_selector"
+        android:text="  分享"
+        android:textSize="16sp"
+        android:paddingLeft="12dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/white"/>
+    <View style="@style/line_bar"></View>
+    <TextView
+            android:id="@+id/action_favorite"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_favorite"
+            android:background="@drawable/sky_action_bar_click_selector"
+            android:text="  收藏"
+            android:textSize="16sp"
+            android:paddingLeft="12dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"/>
+    <View style="@style/line_bar"></View>
+    <TextView 
+        android:id="@+id/action_refresh"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/icon_refresh"
+        android:background="@drawable/sky_action_bar_click_selector"
+        android:text="  刷新"
+        android:textSize="16sp"
+        android:paddingLeft="12dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/white" />
+    <View style="@style/line_bar"></View>
+    <TextView 
+        android:id="@+id/action_browser"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/icon_browser"
+        android:background="@drawable/sky_action_bar_click_selector"
+        android:text="  浏览器"
+        android:textSize="16sp"
+        android:paddingLeft="12dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/white" />
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+    <include android:id="@+id/header" layout="@layout/sky_activity_header"></include>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="36dp"
+                android:orientation="vertical" >
+
+            <EditText
+                    android:id="@+id/txtSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@null"
+                    android:hint="请输入关键字"
+                    android:maxLength="15"
+                    android:paddingLeft="8dp"
+                    android:singleLine="true"
+                    android:textSize="18sp" />
+
+            <ImageView
+                    android:layout_marginTop="-8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/code_search_text_bottom_line" />
+        </LinearLayout>
+
+        <ImageView
+                android:id="@+id/btnSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/code_search_btn" />
+    </RelativeLayout>
+
+    <ListView
+            android:id="@+id/articleList"
+            android:cacheColorHint="#00000000"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/blue"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+    </ListView>
+
+</LinearLayout>

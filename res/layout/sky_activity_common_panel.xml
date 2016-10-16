@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:orientation="vertical">
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+        <TextView
+                style="@style/panel_title"
+                android:id="@+id/title"
+                android:text="最新文章">
+        </TextView>
+
+        <TextView
+                android:id="@+id/btn_more"
+                style="@style/panel_title_more"
+                android:text="更多">
+        </TextView>
+
+    </RelativeLayout>
+
+    <View style="@style/line_gray"
+          android:id="@+id/line2">
+    </View>
+
+    <ListView
+            android:id="@+id/listView"
+            android:layout_below="@+id/line2"
+            android:layout_width="match_parent"
+            android:divider="@color/light_gray"
+            android:dividerHeight="0.5dp"
+            android:layout_height="wrap_content">
+    </ListView>
+</LinearLayout>
+

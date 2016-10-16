@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+    <include android:id="@+id/rating" layout="@layout/sky_game_comment_rating"></include>
+    <com.blue.sky.control.pullrefresh.PullToRefreshListView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/pull_refresh_list"
+            ptr:ptrHeaderTextColor="@color/light_more_gray"
+            ptr:ptrHeaderSubTextColor="@color/light_more_gray"
+            android:layout_below="@+id/rating"
+            android:layout_above="@+id/comment_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/light_gray"
+            android:dividerHeight="8dp"
+            android:fadingEdge="none"
+            android:scrollbars="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:smoothScrollbar="true"/>
+    <RelativeLayout
+            android:id="@+id/comment_bottom"
+            android:background="#fbfbfb"
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            android:layout_height="48dp"
+            android:paddingTop="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentBottom="true">
+        <EditText
+                android:id="@+id/comment"
+                android:layout_width="fill_parent"
+                android:layout_marginRight="80dp"
+                android:background="@null"
+                android:layout_marginLeft="8dp"
+                android:paddingBottom="8dp"
+                android:hint="请输入评论内容"
+                android:maxLength="128"
+                android:paddingLeft="8dp"
+                android:maxLines="8"
+                android:layout_height="40dp"/>
+        <ImageView
+                android:layout_marginTop="-16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="80dp"
+                android:layout_below="@+id/comment"
+                android:scaleType="fitXY"
+                android:src="@drawable/code_search_text_bottom_line"/>
+        <ImageView
+                android:id="@+id/publish"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:src="@drawable/btn_send"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</RelativeLayout>
+

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+    <LinearLayout style="@style/home_nav_list_panel"
+                  android:id="@+id/category_first_panel"
+                  android:layout_marginTop="0.5dp"
+                  android:orientation="horizontal">
+        <TextView
+                style="@style/home_nav_list_item_style"
+                android:id="@+id/nav_list_item_one"
+                android:layout_marginLeft="1dp"
+                android:background="@drawable/sky_item_click_selector"
+                android:text=""/>
+        <TextView
+                style="@style/home_nav_list_item_style"
+                android:id="@+id/nav_list_item_two"
+                android:background="@drawable/sky_item_click_selector"
+                android:text=""/>
+
+        <TextView
+                style="@style/home_nav_list_item_style"
+                android:id="@+id/nav_list_item_three"
+                android:layout_marginRight="0.5dp"
+                android:background="@drawable/sky_item_click_selector"
+                android:text=""/>
+    </LinearLayout>
+
+    <LinearLayout style="@style/home_nav_list_panel"
+                  android:id="@+id/category_second_panel"
+                  android:orientation="horizontal">
+        <TextView
+                style="@style/home_nav_list_item_style"
+                android:id="@+id/nav_list_item_four"
+                android:layout_marginLeft="1dp"
+                android:background="@drawable/sky_item_click_selector"
+                android:text=""/>
+        <TextView
+                style="@style/home_nav_list_item_style"
+                android:id="@+id/nav_list_item_five"
+                android:background="@drawable/sky_item_click_selector"
+                android:text=""/>
+
+        <TextView
+                style="@style/home_nav_list_item_style"
+                android:id="@+id/nav_list_item_six"
+                android:background="@drawable/sky_item_click_selector"
+                android:layout_marginRight="0.5dp"
+                android:text=""/>
+    </LinearLayout>
+</LinearLayout>

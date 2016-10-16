@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+    <RelativeLayout android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal">
+
+        <RatingBar
+                style="@style/sky_rating_bar"
+                android:id="@+id/ratingBar"
+                android:numStars="5"
+                android:rating="2.5"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+        </RatingBar>
+
+        <TextView
+                style="@style/base_btn_play_green_bg"
+                android:id="@+id/btn_rating"
+                android:layout_alignParentRight="true"
+                android:text="评    分" />
+
+    </RelativeLayout>
+    <View style="@style/line_gray" android:id="@+id/line" android:layout_marginTop="16dp"></View>
+</LinearLayout>
+

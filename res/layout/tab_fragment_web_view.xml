@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.blue.sky.web.api.webview.CrossDomainWebView 
-    	xmlns:android="http://schemas.android.com/apk/res/android"
-    	android:id="@+id/webview" 
-        android:layout_height="fill_parent"
-        android:layout_width="fill_parent"
-		android:hardwareAccelerated="true">
-</com.blue.sky.web.api.webview.CrossDomainWebView>

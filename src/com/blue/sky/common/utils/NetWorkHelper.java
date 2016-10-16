@@ -6,12 +6,6 @@ import android.net.NetworkInfo;
 
 public class NetWorkHelper {
 
-	/**
-	 * 确定网络连接类型
-	 * 
-	 * @param mContext
-	 * @return
-	 */
 	public static boolean isWifi(Context mContext) {
 		ConnectivityManager connectivityManager = (ConnectivityManager) mContext.getSystemService(Context.CONNECTIVITY_SERVICE);
 		NetworkInfo activeNetInfo = connectivityManager.getActiveNetworkInfo();
@@ -21,13 +15,7 @@ public class NetWorkHelper {
 		return false;
 	}
 
-	/**
-	 * 确定网络是否可用
-	 * 
-	 * @param mContext
-	 * @return
-	 */
-	public static boolean isConnectActivited(Context mContext) {
+	public static boolean isConnect(Context mContext) {
 		ConnectivityManager connectivityManager = (ConnectivityManager) mContext.getSystemService(Context.CONNECTIVITY_SERVICE);
 		NetworkInfo activeNetInfo = connectivityManager.getActiveNetworkInfo();
 		if ((activeNetInfo != null) &&

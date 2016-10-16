@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include android:id="@+id/header" layout="@layout/sky_activity_header"></include>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp" 
+        android:layout_marginLeft="16dp" >
+
+         <EditText
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:background="@drawable/code_normal_shape__circle_bg"
+            android:hint="请输入你的意见"
+            android:gravity="top|left"
+            android:imeOptions="actionDone"
+            android:isScrollContainer="true"
+            android:paddingTop="4dp"
+            android:paddingLeft="10dp"/>
+
+        <EditText
+                android:id="@+id/contact"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/code_normal_shape__circle_bg"
+                android:hint="QQ/Email"
+                android:gravity="center|left"
+                android:singleLine="true"
+                android:paddingLeft="10dp"/>
+
+            <TextView
+                    style="@style/btn_green_bg"
+                    android:layout_marginTop="32dp"
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="200dp"
+                    android:text="提 交" />
+
+    </LinearLayout>
+
+</LinearLayout>

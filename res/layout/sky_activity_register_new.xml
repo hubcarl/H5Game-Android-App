@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/item_light_gray_bg"
+              android:orientation="vertical">
+
+    <include android:id="@+id/header" layout="@layout/sky_activity_header"></include>
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+        <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone"
+                android:contentDescription="正在加载,请稍后"
+                android:gravity="center_vertical"
+                android:indeterminateDrawable="@drawable/code_progress"
+                style="@style/SmallProgressStyle"
+                />
+
+        <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="#ff0000"
+                android:textSize="16dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:id="@+id/loginLayouTab"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                <TextView
+                        android:id="@+id/lblUserName"
+                        android:layout_width="100dp"
+                        android:layout_height="48dp"
+                        android:paddingLeft="8dp"
+                        android:textColor="@color/light_blank"
+                        android:gravity="center_vertical"
+                        android:text="昵        称"
+                        android:textSize="18dp"
+                        android:maxLength="24"
+                        android:textStyle="bold"/>
+
+                <EditText
+                        android:id="@+id/txtUserName"
+                        android:layout_width="fill_parent"
+                        android:layout_height="48dp"
+                        android:layout_toRightOf="@+id/lblUserName"
+                        android:maxLength="30"
+                        android:hint="请输入昵称"
+                        android:textSize="16dp"
+                        android:background="@null"
+                        android:text="">
+                </EditText>
+            </RelativeLayout>
+            <View style="@style/line_gray"></View>
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                <TextView
+                        android:id="@+id/lblAccount"
+                        android:layout_width="100dp"
+                        android:layout_height="48dp"
+                        android:paddingLeft="8dp"
+                        android:textColor="@color/light_blank"
+                        android:gravity="center_vertical"
+                        android:text="帐        号"
+                        android:textSize="18dp"
+                        android:textStyle="bold"/>
+
+                <EditText
+                        android:id="@+id/txtUserEmail"
+                        android:layout_width="fill_parent"
+                        android:layout_height="48dp"
+                        android:layout_toRightOf="@+id/lblAccount"
+                        android:maxLength="30"
+                        android:textSize="16dp"
+                        android:hint="请输入邮箱"
+                        android:background="@null"
+                        android:text="">
+                </EditText>
+            </RelativeLayout>
+            <View style="@style/line_gray"></View>
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                            android:id="@+id/lblPwd"
+                            android:layout_width="100dp"
+                            android:layout_height="48dp"
+                            android:paddingLeft="8dp"
+                            android:textSize="18dp"
+                            android:textColor="@color/light_blank"
+                            android:gravity="center_vertical"
+                            android:text="密        码"
+                            android:textStyle="bold"/>
+
+                    <EditText
+                            android:id="@+id/txtPassword"
+                            android:layout_width="fill_parent"
+                            android:layout_height="48dp"
+                            android:layout_toRightOf="@+id/lblPwd"
+                            android:maxLength="30"
+                            android:textSize="16dp"
+                            android:hint="请输入密码"
+                            android:background="@null"
+                            android:text="">
+                    </EditText>
+            </RelativeLayout>
+            <View style="@style/line_gray" android:id="@+id/line"></View>
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                <TextView
+                        android:id="@+id/lblConfirmPwd"
+                        android:layout_width="100dp"
+                        android:layout_height="48dp"
+                        android:paddingLeft="8dp"
+                        android:textColor="@color/light_blank"
+                        android:gravity="center_vertical"
+                        android:text="确认密码"
+                        android:textSize="18dp"
+                        android:textStyle="bold"/>
+
+                <EditText
+                        android:id="@+id/txtConfirmPassword"
+                        android:layout_toRightOf="@+id/lblConfirmPwd"
+                        android:layout_width="fill_parent"
+                        android:layout_height="48dp"
+                        android:textSize="16dp"
+                        android:inputType="textPassword"
+                        android:background="@null"
+                        android:hint="请输入确认密码"
+                        android:maxLength="20"
+                        android:text="">
+                </EditText>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="24dp"
+                android:orientation="horizontal">
+
+            <TextView
+                    android:id="@+id/btn_Register"
+                    android:text="注  册"
+                    android:layout_marginTop="8dp"
+                    android:textSize="24sp"
+                    android:textColor="@color/white"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/code_btn_bg" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

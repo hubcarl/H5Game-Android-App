@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+        <include android:id="@+id/header" layout="@layout/sky_activity_main_header"></include>
+
+        <FrameLayout
+                android:id="@+id/content_frame"
+                android:layout_below="@+id/header"
+                android:layout_width="match_parent"
+                android:paddingBottom="48dp"
+                android:layout_height="match_parent"/>
+
+        <TextView
+                  android:id="@+id/network_msg"
+                  android:layout_width="fill_parent"
+                  android:layout_height="36dp"
+                  android:background="@color/code_yellow"
+                  android:paddingLeft="8dp"
+                  android:drawableLeft="@drawable/code_circle_warning"
+                  android:text=" 网络不可用,请检查你的网络设置!"
+                  android:textSize="13dp"
+                  android:textColor="@color/white"
+                  android:layout_above="@+id/tabGroup"
+                  android:visibility="gone"
+                  android:gravity="center_vertical" />
+
+        <RadioGroup
+                android:id="@+id/tabGroup"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_alignParentBottom="true"
+                android:background="@color/white">
+
+            <RadioButton
+                    android:id="@+id/tab_home"
+                    style="@style/code_main_nav_tab"
+                    android:drawableTop="@drawable/sky_tab_home_selector"
+                    android:text="主页"/>
+
+            <RadioButton
+                    android:id="@+id/tab_code"
+                    style="@style/code_main_nav_tab"
+                    android:drawableTop="@drawable/sky_tab_rank_selector"
+                    android:text="排行"/>
+
+            <RadioButton
+                    android:id="@+id/tab_mobile"
+                    style="@style/code_main_nav_tab"
+                    android:drawableTop="@drawable/sky_tab_category_selector"
+                    android:text="分类"/>
+
+            <RadioButton
+                    style="@style/code_main_nav_tab"
+                    android:id="@+id/tab_web"
+                    android:drawableTop="@drawable/sky_tab_profile_selector"
+                    android:text="个人中心"/>
+
+        </RadioGroup>
+    </RelativeLayout>
+
+
+
